@@ -14,7 +14,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: ;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -152,22 +151,29 @@ wallpaper3 {
 }
 
 .botao {
-    width: 280px;
+    width: 270px;
     height: 28px;
     background-color: #0095f6;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    color: white;
+    transition: background .25s ease-in-out;
 }
 
-.botao::before{
-    width: 280px;
-    height: 28px;
-    background-color: #2bdffc;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.botao:hover {
+    background-color: #295999;
 }
+
+.botao:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+.botao:disabled:hover {
+    background-color: #0095f6;
+}
+
 
 .linhas {
     display: flex;
@@ -190,7 +196,6 @@ wallpaper3 {
     position: relative;
     top: .45em;
     background-color: rgba(var(--b38,219,219,219),1);
-    padding-right:
 }
 
 .linha2 {
@@ -313,7 +318,6 @@ margin-top: 12px;
     border: 1px solid #dbdbdb;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 1px;
-    margin: 
     padding: 10px 0;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -336,9 +340,7 @@ margin-top: 12px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 18px;
-    margin: 
     color: rgba(var(--f52,142,142,142),1);
-    
     text-decoration: none;
     flex-direction: row;
     text-decoration: none;

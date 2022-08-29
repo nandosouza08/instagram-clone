@@ -26,10 +26,10 @@
         </div>
 
         <div class="login-info">
-            <input id="input" placeholder=" Telefone, nome de usuário ou email" class="cadastro1"  type="text">
-            <input id="input" placeholder=" Senha" class="cadastro2" type="text">
-            <button id="botao" class="botao">
-                <div id="botao" class="entrar">
+            <input id="username" name="username" onchange="toggleButton()" placeholder=" Telefone, nome de usuário ou email" class="cadastro1" type="text">
+            <input id="password" name="password" onchange="toggleButton()" placeholder=" Senha" class="cadastro2" type="password">
+            <button id="botao" disabled class="botao">
+                <div class="entrar">
                     <b>Entrar</b>
                 </div>
             </button>
