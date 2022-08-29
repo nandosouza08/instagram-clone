@@ -5,76 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="wallpapers" class="corpo">
-        <div class="celular">
-            <img src="img/fundo-1dc085cdb87d.png" alt="base-celular">
-                <div id="slider" class="wallpapers">
-                    <img  src="img/4d62acb667fb.png" alt="wallpaper1">
-                    <img src="img/94edb770accf.png" alt="wallpaper2">
-                    <img class="selected" src="img/a4fd825e3d49.png" alt="wallpaper3">
-                </div>
-        </div>
-    </section>
-
-    <section class="login">
-
-        <div>
-            <img class="logo" src="img/logo-7a252de00b20.png" alt="logo">
-        </div>
-
-        <div class="login-info">
-            <input id="username" name="username" onchange="toggleButton()" placeholder=" Telefone, nome de usuário ou email" class="cadastro1" type="text">
-            <input id="password" name="password" onchange="toggleButton()" placeholder=" Senha" class="cadastro2" type="password">
-            <button id="botao" disabled class="botao">
-                <div class="entrar">
-                    <b>Entrar</b>
-                </div>
-            </button>
-            <div class="linhas">
-                <div class="linha1"></div>
-                <div class="ou">ou</div>
-                <div class="linha2"></div>
+    <main id="wallpapers" class="corpo">
+        <section id="wallpapers" class="corpo">
+            <div class="celular">
+                <img src="img/fundo-1dc085cdb87d.png" alt="base-celular">
+                    <div id="slider" class="wallpapers">
+                        <img  src="img/4d62acb667fb.png" alt="wallpaper1">
+                        <img src="img/94edb770accf.png" alt="wallpaper2">
+                        <img class="selected" src="img/a4fd825e3d49.png" alt="wallpaper3">
+                    </div>
             </div>
-            
-            <button class="botao-face" type="button">
-                <img class="icon-face" width="17x" src="img/face-icon.png" alt="facebook">
-                <span class="text-face">Entrar com o Facebook</span>
-            </button>
-            
-            <div class="lost-pass">
-                <a class="lost" href="">Esqueceu a senha?</a>
-            </div>
-
-            <div class="container-cadastro">
-                <div class="nao-tem-conta">
-                    <p class="text">Não tem uma conta?</p>
-                    <a href="https://www.instagram.com/">
-                        <a class="cadastro">Cadastre-se</a>
-                    </a>
-                </div>
-            </div>
-
+        </section>
+    
+        <section class="login">
+    
             <div>
-                <p class="obtenha">Obtenha o aplicativo.</p>
+                <img class="logo" src="img/logo-7a252de00b20.png" alt="logo">
             </div>
-            
+    
+            <div class="login-info">
+                
+                <input id="username" name="username" placeholder=" Telefone, nome de usuário ou email" class="cadastro1" type="text">
+                <input id="password" name="password" onkeyup="btnActivation()" placeholder=" Senha" class="cadastro2" type="password">
+                <button id="start_button" type="submit" disabled class="botao">
+                    <div class="entrar">
+                        <b>Entrar</b>
+                    </div>
+                </button>
+                <div class="linhas">
+                    <div class="linha1"></div>
+                    <div class="ou">ou</div>
+                    <div class="linha2"></div>
+                </div>
+                
+                <button class="botao-face" type="button">
+                    <img class="icon-face" width="17x" src="img/face-icon.png" alt="facebook">
+                    <span class="text-face">Entrar com o Facebook</span>
+                </button>
+                
+                <div class="lost-pass">
+                    <a class="lost" href="">Esqueceu a senha?</a>
+                </div>
+    
+                <div class="container-cadastro">
+                    <div class="nao-tem-conta">
+                        <p class="text">Não tem uma conta?</p>
+                        <a href="https://www.instagram.com/">
+                            <a class="cadastro">Cadastre-se</a>
+                        </a>
+                    </div>
+                </div>
+    
+                <div>
+                    <p class="obtenha">Obtenha o aplicativo.</p>
+                </div>
+                
+            </div>
+        </section>
+    
+        <section>
+            <div class="store">
+                <img class="apple-store" width="130px" src="img/apple-68006a2bb372.png" alt="apple">
+                <img class="play-store" width="130px" src="img/play-store-2f2a0c05b2f3.png" alt="play-store">
+            </div>
+        </section>
+    </main>
+<!-- 
+    <footer>
+        <div>
+            <div class="container-footer">
+                <div class="linha1">
+                    <div class="lista">
+                        <a href="">Meta</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Sobre</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Blog</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Carreiras</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Ajuda</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">API</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Privacidade</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Termos</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Principais contas</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Hashtag</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Localizações</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Instagram Lite</a>
+                    </div>
+                    <div class="lista">
+                        <a href="">Carregamento de contatos e não usuários</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </footer>
+-->
 
-        
-            
-            
-    </section>
-
-    <section>
-        <div class="store">
-            <img class="apple-store" width="130px" src="img/apple-68006a2bb372.png" alt="apple">
-            <img class="play-store" width="130px" src="img/play-store-2f2a0c05b2f3.png" alt="play-store">
-        </div>
-    </section>
+    
 
 <script src="script.js"></script>
+
+
+    </div>
+</footer>
 </body>
 </html>

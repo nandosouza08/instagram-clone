@@ -37,14 +37,37 @@ window.addEventListener("load", start)
 
 
 //Desabilitar ou nao o botão de Entrar
+/*
+const username = document.querySelector('#username')
+const password = document.querySelector('#password')
 
+username.addEventListener('keypress', toggleButton)
+password.addEventListener('keypress', toggleButton)
 function toggleButton() {
-    const username = document.querySelector('#username').value;
-    const password = document.querySelector('#password').value;
+    const usernameinput = document.querySelector('#username')
+    const passwordinput = document.querySelector('#password')
+    
 
-    if (username && password) {
+    if (usernameinput.value && passwordinput.value) {
         document.querySelector('#botao').disabled = false;
         return
     }
     document.querySelector('#botao').disabled = true;
+} 
+*/
+
+
+
+
+//2ª tentativa habilitar botao
+
+function btnActivation(){
+
+    if(!document.getElementById('password').value.length){
+        document.getElementById("start_button").disabled = true;            
+    }else{
+        document.getElementById("start_button").disabled = false;
+
+    }           
 }
+
