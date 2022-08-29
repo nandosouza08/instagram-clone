@@ -1,5 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -24,14 +30,15 @@ body {
 .login {
     display: block;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
-    opacity: ;
     padding-top: 50px;
     padding-left: 13px;
     padding-right: 13px;
-    
+    background-color: #fff;
     height: 330px;
-    margin-bottom: 205px;
+    margin-bottom: 220px;
     border-radius: 1px;
+    padding-bottom: 10px;
+    
 }
 
 .wallpapers {
@@ -99,7 +106,7 @@ wallpaper3 {
 
 .login-info {
     display: flex;
-    width: 335px;
+    width: 324px;
     flex-direction: column;
     margin-top: -370px;
     margin-bottom: 360px;
@@ -120,19 +127,28 @@ wallpaper3 {
 
 .cadastro1 {
     width: 300px;
-    height: 30px;
+    height: 35px;
     margin-bottom: 7px;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
     border-radius: 3px;
+    float: none;
+    z-index: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline-color: rgba(var(--ca6,219,219,219),5);
+    padding: 1px;
+    
     
 }
 
 .cadastro2 {
     width: 300px;
-    height: 30px;
+    height: 35px;
     margin-bottom: 15px;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
     border-radius: 3px;
+    outline-color: rgba(var(--ca6,219,219,219),1);
+    padding: 1px;
 }
 
 .botao {
@@ -142,7 +158,15 @@ wallpaper3 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
+}
+
+.botao::before{
+    width: 280px;
+    height: 28px;
+    background-color: #2bdffc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .linhas {
@@ -214,7 +238,7 @@ wallpaper3 {
 
 .apple-store {
     margin-top: -70px;
-    margin-left: -30px;
+    margin-left: -20px;
     cursor: pointer;
 }
 
@@ -302,7 +326,7 @@ margin-top: 12px;
     border-radius: 1px;
     margin: 0 0 10px;
     padding: 10px 0;
-    width: 361px;
+    width: 350px;
     margin-top: 30px;
 }
 
@@ -351,4 +375,12 @@ margin-top: 12px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     
     
+}
+
+.obtenha {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
 }
