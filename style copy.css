@@ -5,35 +5,21 @@
 }
 
 html{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
-    width: 100%;    
+    width: 100%;
+    
 }
 
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: rgba(var(--i1d,38,38,38),1);
     background-color: #fafafa;
+    display: block;
+    /*max-height: 635px;*/
+    
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 12.5px;
     line-height: 18px;
-    width: 900px;
-    margin-bottom: 210px;
-}
-
-.boss{
-    display: flex;
-    justify-content: center;
-    width: 900px;
-    justify-content: center;
-    position: relative;
-    height: 700px;
-    margin-top: 70px;
 }
 
 .corpo {
@@ -42,52 +28,19 @@ body {
     justify-content: center;
     position: relative;
     margin-top: 70px;
-    
+    margin-bottom: 90px;
 }
-
-.corpo2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-}
-
-.login2{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    /* border: 1px solid rgba(var(--ca6,219,219,219),1); */
-    align-items: center;
-    justify-content: center;
-    /* background-color: #fff; */
-    border-radius: 1px;
-    width: 350px;
-    height: 350px;
-    margin-left: 465px;
-    margin-top: 390px;
-}
-
-label{
-    padding-top: 3px;
-}
-
-
 
 .login {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
+    min-width: 500px;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     border-radius: 1px;
-    padding-left: ;
-    padding-bottom: 20px;
-    width: 350px;
-    height: 396.5px;
-    margin-top: 80px;
+    
 }
 
 .wallpapers {
@@ -139,98 +92,50 @@ wallpaper3 {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 45px;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
 .store {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
-    padding-left: 2px;
+
 }
 
-.login-info{
+.login-info {
     display: flex;
+    width: 324px;
     flex-direction: column;
     position: relative;
     color: #8e8e8e;
-    font-size: 12px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-/* .login .login-info {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color: #8e8e8e;
-    align-content: space-between;
     justify-content: space-between;
-    min-height: 50px;
-    align-items: flex-start;
-    justify-content: center;
-} */
+    align-content: space-between;
 
-
-label{
-    margin-left: ;
 }
+
+
 
 .login-info label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-}
-
-input{
-    font-size: 12px;
-    padding: 14px 0 2px 8px !important;
-    -webkit-appearance: none;
-    background: rgba(var(--b3f,250,250,250),1);
-    border: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    margin: 0;
-    outline: 0;
-    overflow: hidden;
-    padding: 9px 0 7px 8px;
-    text-overflow: ellipsis;
+    position: relative;
+    padding-left: 35px;
 }
 
 .login .login-info input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     background: rgba(var(--b3f,250,250,250),1);
-    position: relative;
     width: 100%;
     transition: all .3s ease-out;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -webkit-appearance:none;
-    border-radius:0;
-    width: 268px;
-    height: 40px;
-    margin-top: 6px;
+    height: 100%;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
     border-radius: 3px;
-    float: none;
-    z-index: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    outline-color: rgba(var(--ca6,219,219,219),5);
-    padding: 8px 8px 0px 8px;
+    padding: 5px 5px;
     font-size: 12px;
+    position: relative;
+    
+    
 }
 
 .login-info input:focus{
@@ -246,12 +151,19 @@ input{
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 15px;
+    margin-top: 13px;
     transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;   
 }
 
+.login-info input:required:invalid + label{
+
+}
+
+.login-info input:focus:required:invalid{
+    
+}
 
 .login-info input:required:invalid + label:before{
     content: '*';
@@ -260,7 +172,7 @@ input{
 .login-info input:focus + label,
 .login-info input:not(:placeholder-shown) + label{
 font-size: 10px;
-margin-top: 7px;
+margin-top: 8px;
 }
 
 
@@ -281,21 +193,36 @@ margin-top: 7px;
 
 
 
+.cadastro1 {
+    
+    
+}
 
+.cadastro2 {
+    width: 300px;
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    outline-color: rgba(var(--ca6,219,219,219),1);
+    padding: 1px;
+}
 
 .botao {
-    width: 269px;
-    height: 30px;
+    width: 270px;
+    height: 28px;
     background-color: #0095f6;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     color: white;
     transition: background .25s ease-in-out;
-    margin-top: 15px;
-    margin-left: ;
+    margin-top: 7px;
 }
 
+.botao:hover {
+    background-color: #295999;
+}
 
 .botao:disabled {
     opacity: .4;
@@ -310,13 +237,14 @@ margin-top: 7px;
 
 .linhas {
     display: flex;
-    margin: 20px 0px 20px 0px;
-    
+    margin: 17px 40px 18px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
 }
 
 .linha1 {
-    width: 108px;
+    width: 110px;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -331,7 +259,7 @@ margin-top: 7px;
 }
 
 .linha2 {
-    width: 108px;
+    width: 110px;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -365,7 +293,6 @@ margin-top: 7px;
 .entrar {
     color: white;
     font-size: 15px;
-    
 }
 
 .play-store {
@@ -374,21 +301,15 @@ margin-top: 7px;
 }
 
 .apple-store {
-    margin-right: 8px;
+    
     cursor: pointer;
 }
 
-.lost-pass{
-    margin-top: 13px;
-}
-
-.lost-pass a{
-    margin-top: 15px;
-    font-size: 12px;
+.lost-pass {
+margin-top: 12px;
 }
 
 .lost {
-    
     text-decoration: none;
     color: #00376b;
     font-size: 13px;
@@ -398,29 +319,42 @@ margin-top: 7px;
 }
 
 .botao-face {
-    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     color: #0095f6;
     color: rgba(var(--d69,0,149,246),1);
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: 0 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     cursor: pointer;
-    margin-left: ;
+    display: flex;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-weight: 600;
+    padding: 5px 9px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 7px;
-    margin-top: 8px;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: auto;
+    margin: 3px;
 }
 
 .text-face {
     display: flex;
-    color: #3b5187;
     padding-left: 8px;
-    align-items: center;
-    justify-content: center;
+    color: #3b5187;
 }
 
 .icon-face {
@@ -431,19 +365,31 @@ margin-top: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(var(--d87,255,255,255),1);
-    border: 1px solid #dbdbdb;
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
-    border-radius: 1px;
+    
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    
     background-color: #fff;
     background-color: rgba(var(--d87,255,255,255),1);
     border: 1px solid #dbdbdb;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 1px;
     padding: 10px 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid #dbdbdb;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
     width: 350px;
-    margin-top: 27px;
-    height: 65px;
+    margin-top: 30px;
 }
 
 .nao-tem-conta {
@@ -466,7 +412,7 @@ margin-top: 7px;
     color: #262626;
     color: rgba(var(--i1d,38,38,38),1);
     font-size: 14px;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     align-items: center;
@@ -492,20 +438,20 @@ margin-top: 7px;
 }
 
 .obtenha {
-    display: flex;
     color: rgba(var(--i1d,38,38,38),1);
     font-size: 14px;
+    line-height: 18px;
     margin: 10px 20px 10px 20px;
     text-align: center;
-    justify-content: center;
 }
 
-/* main {
+main {
+    
     overflow: hidden;
     display: flex;
-} */
+}
 
-/* .footer{
+.footer{
     width: 100%;
     height: 200px;
     display: flex;
@@ -532,7 +478,7 @@ margin-top: 7px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 18px;
-} */
+}
 
 .linha1{
     display: flex;

@@ -63,11 +63,12 @@ function toggleButton() {
 
 function btnActivation(){
 
-    if(!document.getElementById('password').value.length){
+    if(!document.getElementById('password' || 'username').value.length){
         document.getElementById("start_button").disabled = true;            
-    }else{
+    }else { 
         document.getElementById("start_button").disabled = false;
 
     }           
 }
+
 

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="wallpapers" class="corpo">
+    <main id="wallpapers" class="boss">
+
         <section id="wallpapers" class="corpo">
             <div class="celular">
                 <img src="img/fundo-1dc085cdb87d.png" alt="base-celular">
@@ -26,56 +27,63 @@
     
         <section class="login">
     
-            <div>
-                <img class="logo" src="img/logo-7a252de00b20.png" alt="logo">
-            </div>
+            
+            <img class="logo" src="img/logo-7a252de00b20.png" alt="logo">
+            
     
             <div class="login-info">
+                <input id="username" name="username" onkeyup="btnActivation()" placeholder=" " type="text">
+                <label class="tel">Telefone, nome de usuário ou email</label>
+            
+            <div class="login-info">
+                <input id="password" name="password" onkeyup="btnActivation()" placeholder=" " type="password">
+                <label>Senha</label>
+            </div>
                 
-                <input id="username" name="username" placeholder=" Telefone, nome de usuário ou email" class="cadastro1" type="text">
-                <input id="password" name="password" onkeyup="btnActivation()" placeholder=" Senha" class="cadastro2" type="password">
-                <button id="start_button" type="submit" disabled class="botao">
-                    <div class="entrar">
-                        <b>Entrar</b>
-                    </div>
-                </button>
-                <div class="linhas">
-                    <div class="linha1"></div>
-                    <div class="ou">ou</div>
-                    <div class="linha2"></div>
+            <button id="start_button" type="submit" disabled class="botao">
+                <div class="entrar">
+                    <b>Entrar</b>
                 </div>
-                
-                <button class="botao-face" type="button">
-                    <img class="icon-face" width="17x" src="img/face-icon.png" alt="facebook">
-                    <span class="text-face">Entrar com o Facebook</span>
-                </button>
-                
-                <div class="lost-pass">
-                    <a class="lost" href="">Esqueceu a senha?</a>
-                </div>
-    
-                <div class="container-cadastro">
-                    <div class="nao-tem-conta">
-                        <p class="text">Não tem uma conta?</p>
-                        <a href="https://www.instagram.com/">
-                            <a class="cadastro">Cadastre-se</a>
-                        </a>
-                    </div>
-                </div>
-    
-                <div>
-                    <p class="obtenha">Obtenha o aplicativo.</p>
-                </div>
-                
+            </button>
+
+            <div class="linhas">
+                <div class="linha1"></div>
+                <div class="ou">ou</div>
+                <div class="linha2"></div>
+            </div>
+            
+            <button class="botao-face" type="button">
+                <img class="icon-face" width="17x" src="img/face-icon.png" alt="facebook">
+                <span class="text-face">Entrar com o Facebook</span>
+            </button>
+            
+            <div class="lost-pass">
+                <a class="lost" href="">Esqueceu a senha?</a>
             </div>
         </section>
     
-        <section>
+    <div class="login2">
+        <section class="corpo2">
+            <div class="container-cadastro">
+                <div class="nao-tem-conta">
+                    <p class="text">Não tem uma conta?</p>
+                    <a href="https://www.instagram.com/">
+                        <a class="cadastro">Cadastre-se</a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="obtenha">
+                <p class="obtenha">Obtenha o aplicativo.</p>
+            </div>
+
             <div class="store">
-                <img class="apple-store" width="130px" src="img/apple-68006a2bb372.png" alt="apple">
-                <img class="play-store" width="130px" src="img/play-store-2f2a0c05b2f3.png" alt="play-store">
+                <img class="apple-store" height="40px" src="img/apple-68006a2bb372.png" alt="apple">
+                <img class="play-store" height="40px" src="img/play-store-2f2a0c05b2f3.png" alt="play-store">
             </div>
         </section>
+    </div>
+        
     </main>
 <!-- 
     <footer>
