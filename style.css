@@ -21,8 +21,7 @@ body {
     background-color: #fafafa;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 12.5px;
-    line-height: ;
-    width: 900px;
+    width: 100%;
     margin-bottom: 210px;
 }
 
@@ -33,9 +32,9 @@ b{
 .boss{
     display: flex;
     justify-content: center;
-    width: 900px;
+    width: 100%;
     justify-content: center;
-    position: relative;
+    position: absolute;
     height: 700px;
     margin-top: 70px;
     letter-spacing: 0px;
@@ -51,14 +50,13 @@ b{
     margin-top: 70px;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 810px){
     section.corpo{display: none;}
-    section.corpo2{margin-right: 465px;}
-    .boss{}
-        
-        
-    }
+    section.corpo2{margin-right: ;}
+    .login2{margin-right: 465px;} 
+    .boss{margin-top: 20px;}    
 }
+
 
 
 .corpo2{
@@ -155,12 +153,6 @@ wallpaper3 {
     justify-content: center;
 }
 
-@media only screen and (min-width: 7200px) and (max-width:720px) {
-    .conteudo-principal-imagem{
-        width: none;
-        padding-left: 0;
-    }
-}
 
 
 .logo {
